@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Product {
 
-	//variabili della classe
+	static //variabili della classe
 	int code = generateCode();
 	String name;
 	String description;
@@ -23,12 +23,15 @@ public class Product {
 	
 	public static int generateCode() {
 		Random r = new Random();
-		int max = 10;
+		int max = 100;
 		int result = r.nextInt(max);
 		return result;
 	}
 	
 
+	public static void main(String[] args) {
+		System.out.println(code);
+	}
 	
 }
 
