@@ -10,7 +10,7 @@ public class Main {
 
 		System.out.println("----------------------------------------------");
 		
-		System.out.println("Codice prodotto = " + String.format("%05d", iPhone18SuperUltra.code));
+		System.out.println("Codice prodotto = " + iPhone18SuperUltra.code);
 		System.out.println("Nome prodotto = " + iPhone18SuperUltra.name);
 		System.out.println("Descrizione prodotto = " + iPhone18SuperUltra.description);
 		System.out.println("Prezzo prodotto = " + "€" + iPhone18SuperUltra.price);
@@ -22,7 +22,7 @@ public class Main {
 	
 		Product cavettoUniversale = new Product("Cavetto Universale PRO", "Il cavetto più potente del mondo", 15.49, 22);
 		
-		System.out.println("Codice prodotto = " + String.format("%05d", cavettoUniversale.code));
+		System.out.println("Codice prodotto = " + cavettoUniversale.code);
 		System.out.println("Nome prodotto = " + cavettoUniversale.name);
 		System.out.println("Descrizione prodotto = " + cavettoUniversale.description);
 		System.out.println("Prezzo prodotto = " + "€" + cavettoUniversale.price);
@@ -34,7 +34,7 @@ public class Main {
 		
 		Product farinaBioSuperEtica = new Product("Farina Bio Super Etica", "La farina senza violenza", 15.49, 5);
 		
-		System.out.println("Codice prodotto = " + String.format("%05d", farinaBioSuperEtica.code));
+		System.out.println("Codice prodotto = " + farinaBioSuperEtica.code);
 		System.out.println("Nome prodotto = " + farinaBioSuperEtica.name);
 		System.out.println("Descrizione prodotto = " + farinaBioSuperEtica.description);
 		System.out.println("Prezzo prodotto = " + "€" + farinaBioSuperEtica.price);
