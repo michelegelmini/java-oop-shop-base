@@ -1,37 +1,34 @@
 package org.lessons.java.shop;
 
-import java.util.Random;
+import java.util.*;
 
 
 public class Product {
 
-	static //variabili della classe
-	int code = generateCode();
+	//variabili della classe
+	int code;
 	String name;
 	String description;
-	int price;
+	double price;
 	int iva;
+	double finalPrice;
 	
-	Product(int code, String name, String description, int price, int iva) {
-		this.code = code;
-		this.name = name;
-		this.description = description;
-		this.price = price;
-		this.iva = iva;
-		
-	}
-	
-	public static int generateCode() {
+	int generateCode() {
 		Random r = new Random();
-		int max = 100;
+		int max = 10000;
 		int result = r.nextInt(max);
 		return result;
 	}
 	
-
-	public static void main(String[] args) {
-		System.out.println(code);
-	}
 	
+	Product(String name, String description, double price, int iva) {
+		this.code = generateCode();
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.iva = iva;
+		this.finalPrice = price += price*iva/100;
+		}
 }
-
+	
+	
