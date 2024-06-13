@@ -13,7 +13,7 @@ public class Product {
 	int iva;
 	double finalPrice;
 	
-	
+	//costruttore
 	Product(String name, String description, double price, int iva) {
 		this.name = name;
 		this.description = description;
@@ -23,13 +23,13 @@ public class Product {
 		this.code = generateCode();
 		}
 	
-	
+	//metodo per la generazione del codice prodotto
 	String generateCode() {
 		Random r = new Random();
 		int max = 10000;
 		int result = r.nextInt(max);
 	
-		
+	//caratteri speciali sulla base del valore dell'IVA	
 		String specialCode;
 		if (iva >= 22) {
 			specialCode = "FF";
