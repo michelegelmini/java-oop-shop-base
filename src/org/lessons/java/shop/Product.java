@@ -20,6 +20,7 @@ public class Product {
 		this.price = price;
 		this.iva = iva;
 		this.finalPrice = price += price*iva/100;
+		//generateCode posizionato in fondo, se fosse rimasto in alto non prenderebbe il valore di iva
 		this.code = generateCode();
 		}
 	
@@ -37,7 +38,7 @@ public class Product {
 			specialCode = "CC";
 		}
 		
-		return (specialCode +result);
+		return (specialCode + (String.format("%05d", result)));
 	}
 	
 }
